@@ -34,6 +34,12 @@ INSTALLED_APPS = [
     'DjangoBackend.apps.DjangobackendConfig',
     'bootstrap4',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,7 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+SITE_ID = 1
 ROOT_URLCONF = 'ReactiveDjango.urls'
 
 TEMPLATES = [
